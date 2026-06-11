@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body, #root {
+    @apply h-full p-0 m-0;
+  }
+
+  body {
+    @apply font-sans antialiased;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    @apply w-1 h-1;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-white/10 rounded;
+  }
+}
