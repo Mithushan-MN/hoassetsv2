@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 
 
-const API = process.env.REACT_APP_API_URL || "http://localhost:5000/api/v1";
+const API = process.env.REACT_APP_API_URL || "";
 
 /* ══════════════════════════════════════════════════════ ICONS */
 const IPlus  = ({ s=16 }) => <svg width={s} height={s} viewBox="0 0 16 16" fill="none"><path d="M8 2v12M2 8h12" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"/></svg>;
@@ -337,7 +337,7 @@ const TileModal = ({ initial = {}, wId, cId, onClose, onSaved }) => {
     setUrl(initial.link   || "");
     setMode(initial.type === "link" ? "url" : "asset");
     setImage(null);
-  }, [initial._id]); // ← key fix: depend on _id, not the whole object
+ }, [initial._id, initial.name, initial.link, initial.type]); // ← key fix: depend on _id, not the whole object
 
   const canSave = name.trim() && (mode !== "url" || url.trim());
 

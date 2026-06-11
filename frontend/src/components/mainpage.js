@@ -1,6 +1,6 @@
 import TabSections from './TabSections';
 import Footer from "./Footer";
-import Navimage from './navimage';
+// import Navimage from './navimage';
 
 const MainPage = function () {
     return(
