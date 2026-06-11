@@ -69,7 +69,7 @@ const connectDB = async () => {
   try {
     const conn = await mongoose.connect(
       process.env.MONGO_URI ||
-        'mongodb+srv://sthamil1016_db_user:oYRDfndBhKrOchEw@hoassetscluster.pb24m8d.mongodb.net/?appName=HOAssetsCluster'
+        ''
     );
     console.log(`MongoDB Connected: ${conn.connection.host}`);
   } catch (error) {
