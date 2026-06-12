@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 const API =
-  process.env.REACT_APP_API_URL || "http://localhost:5000/api/v1";
+  // process.env.REACT_APP_API_URL || "http://localhost:5000/api/v1";
+  process.env.REACT_APP_API_URL || "";
 
 const AdminRegister = () => {
   const [fullName, setFullName] = useState("");
