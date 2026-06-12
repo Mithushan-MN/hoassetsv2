@@ -5,7 +5,8 @@ const seedData = require('./seedData.json');
 
 dotenv.config();
 
-const mongoURI = process.env.MONGO_URI || 'mongodb+srv://sthamil1016_db_user:oYRDfndBhKrOchEw@hoassetscluster.pb24m8d.mongodb.net/?appName=HOAssetsCluster';
+// const mongoURI = process.env.MONGO_URI || 'mongodb+srv://sthamil1016_db_user:oYRDfndBhKrOchEw@hoassetscluster.pb24m8d.mongodb.net/?appName=HOAssetsCluster';
+const mongoURI = process.env.MONGO_URI || '';
 
 const connectDB = async () => {
   try {

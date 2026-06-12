@@ -36,7 +36,9 @@ const TabSections = () => {
   useEffect(() => {
     const fetchWrappers = async () => {
       try {
-        const res = await fetch('/api/v1/wrappers');
+        // const res = await fetch('/api/v1/wrappers');
+        const API = process.env.REACT_APP_API_URL || "https://hoassetsv2.vercel.app";
+      const res = await fetch(`${API}/api/v1/wrappers`);
         if (!res.ok) throw new Error('Network response was not ok');
         setWrappers(await res.json());
       } catch (err) {
