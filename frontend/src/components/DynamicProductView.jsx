@@ -30,17 +30,17 @@ const ComingSoon = ({ message = "This content is coming soon." }) => (
 /* ═══════════════════════════════════════════
    EXTERNAL LINK ICON
 ═══════════════════════════════════════════ */
-const ExtIcon = () => (
-  <svg
-    width="10" height="10" viewBox="0 0 10 10" fill="none"
-    className="opacity-40 shrink-0"
-  >
-    <path
-      d="M1.5 8.5L8.5 1.5M8.5 1.5H4.5M8.5 1.5V5.5"
-      stroke="currentColor" strokeWidth="1.4" strokeLinecap="round"
-    />
-  </svg>
-);
+// const ExtIcon = () => (
+//   <svg
+//     width="10" height="10" viewBox="0 0 10 10" fill="none"
+//     className="opacity-40 shrink-0"
+//   >
+//     <path
+//       d="M1.5 8.5L8.5 1.5M8.5 1.5H4.5M8.5 1.5V5.5"
+//       stroke="currentColor" strokeWidth="1.4" strokeLinecap="round"
+//     />
+//   </svg>
+// );
 
 /* ═══════════════════════════════════════════
    ASSET CARD
