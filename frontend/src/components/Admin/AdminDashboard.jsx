@@ -64,7 +64,7 @@ const mkFD = (obj) => {
 };
 /* JSON fetch — used for collection create/edit (no file uploads) */
 const apiJSON = async (method, path, obj) => {
-  const r = await fetch(`${API}/api/v1${path}`, {
+  const r = await fetch(`${API}${path}`, {
     method,
     headers: { Authorization:`Bearer ${tok()}`, 'Content-Type':'application/json' },
     body: JSON.stringify(obj)
